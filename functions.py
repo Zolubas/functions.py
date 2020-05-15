@@ -1,3 +1,11 @@
+def divisor_de_tensao(tensao,z_quero,z_outra):
+    return tensao*z_quero/(z_quero+z_outra)
+
+def serie(z1,z2): #2 impedancias monofasicas em serie
+    return z1 + z2
+def paralelo(z1,z2): #2 impedancias monofasicas em paralelo
+    return (z1*z2/(z1+z2))
+
 def phase(x): #Rerturns phaase in degrees
     return ((180/np.pi)*(np.arctan2(x.imag,x.real)))
 
